@@ -1,0 +1,18 @@
+{
+  "manifest_version" : 2,
+  "name" : "YoutubeDownloader",
+  "description" : "Download Youtube Videos Easily",
+  "version" : "0.1",
+  "content_scripts" : [
+    {
+      "matches" : ["<all_urls>"],
+      "js" : ["main.js"]
+    }
+  ],
+
+  "permissions" : ["tabs"],
+  "browser_action" : {
+    "default_popup" : "index.html",
+    "default_title" : "Youtube Downloader"
+  }
+}
